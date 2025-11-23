@@ -45,7 +45,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
+  font-size: 14px;
   text-decoration: none;
   text-align: left;
 }
@@ -61,7 +61,7 @@
   font-family: "Poppins", sans-serif;
 }
 table {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
   background: rgba(255, 255, 255, 0.05);
