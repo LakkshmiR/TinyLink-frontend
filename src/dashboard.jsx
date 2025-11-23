@@ -17,6 +17,7 @@ function Dashboard() {
       .then((result) => {
         console.log(result.data);
         alert("Code Generated!!");
+
         fetchUrls();
         setUrl("");
         setCustomCode("");
@@ -92,7 +93,7 @@ function Dashboard() {
             </thead>
             <tbody>
               {urldatas.map((urldata) => {
-                const dateObj = new Date(urldata.lastClicked);
+                const dateObj = urldata.lastClicked;
                 const indianDate = dateObj.toLocaleDateString("en-IN", {
                   timeZone: "Asia/Kolkata",
                 });
@@ -103,6 +104,10 @@ function Dashboard() {
                   <tr key={urldata._id}>
                     <td data-cell="Code">{urldata.code}</td>
                     <td data-cell="URL">{urldata.url}</td>
+                    <td data-cell="URL">
+                      <a href="https://tinylink-backend-c7jd.onrender.com/${urldata.code}"></a>
+                    </td>
+
                     <td data-cell="Clicks">{urldata.clicks}</td>
                     <td data-cell="Last Clicked">
                       {indianDate}-{indianTime}
