@@ -85,6 +85,7 @@ td.shortlink-th {
 @media (max-width: 800px) {
   td.shortlink-th {
     display: block;
+    text-align: none;
   }
 
   table {
