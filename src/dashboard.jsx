@@ -85,7 +85,7 @@ function Dashboard() {
               <tr>
                 <th>Code</th>
                 <th>URL</th>
-                {/* <th>Shortlink</th> */}
+                <th>Shortlink</th>
 
                 <th>Clicks</th>
                 <th>Last Clicked</th>
@@ -112,7 +112,7 @@ function Dashboard() {
                     <td data-cell="URL" className="url-css">
                       {urldata.url}
                     </td>
-                    {/* <td data-cell="Shortlink">
+                    <td data-cell="Shortlink">
                       <button
                         className="short-link-btn"
                         onClick={() => {
@@ -125,7 +125,7 @@ function Dashboard() {
                       >
                         {`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}
                       </button>
-                    </td> */}
+                    </td>
 
                     <td data-cell="Clicks">{urldata.clicks}</td>
                     <td data-cell="Last Clicked">
