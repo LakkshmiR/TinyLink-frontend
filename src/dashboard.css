@@ -42,11 +42,10 @@
   background: none;
   cursor: pointer;
   text-decoration: underline;
-  /* white-space: nowrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 
-  text-align: left; */
   text-decoration: none;
   text-align: left;
 }
@@ -110,5 +109,15 @@ tr:nth-of-type(n) {
     font-weight: 700;
     text-transform: capitalize;
     text-align: left;
+  }
+  .short-link-btn {
+    white-space: unset;
+    overflow: none;
+    text-overflow: none;
+  }
+  .url-css {
+    white-space: unset;
+    overflow: none;
+    text-overflow: none;
   }
 }
