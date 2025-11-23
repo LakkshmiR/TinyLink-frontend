@@ -85,6 +85,8 @@ function Dashboard() {
               <tr>
                 <th>Code</th>
                 <th>URL</th>
+                <th>Shortlink</th>
+
                 <th>Clicks</th>
                 <th>Last Clicked</th>
                 <th>Actions</th>
@@ -111,12 +113,6 @@ function Dashboard() {
                       {urldata.url}
                     </td>
                     <td data-cell="Shortlink">
-                      {/* <a
-                        className="shortlink-css"
-                        href={`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >{`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}</a> */}
                       <button
                         className="short-link-btn"
                         onClick={() => {
@@ -124,6 +120,7 @@ function Dashboard() {
                             `https://tinylink-backend-c7jd.onrender.com/${urldata.code}`,
                             "_blank"
                           );
+                          location.reload();
                         }}
                       >
                         {`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}
