@@ -9,7 +9,7 @@ function Stats() {
 
   useEffect(() => {
     axios
-      .get(`https://tinylink-backend-c7jd.onrender.com/${code}`)
+      .get(`https://tinylink-backend-c7jd.onrender.com/get/${code}`)
       .then((result) => {
         setStatsDatas(result.data);
       })
