@@ -99,9 +99,11 @@ function Dashboard() {
                       timeZone: "Asia/Kolkata",
                     })
                   : "-";
-                const indianTime = dateObj.toLocaleTimeString("en-IN", {
-                  timeZone: "Asia/Kolkata",
-                });
+                const indianTime = dateObj
+                  ? new Date(dateObj).toLocaleTimeString("en-IN", {
+                      timeZone: "Asia/Kolkata",
+                    })
+                  : "-";
                 return (
                   <tr key={urldata._id}>
                     <td data-cell="Code">{urldata.code}</td>
