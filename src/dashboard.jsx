@@ -112,7 +112,7 @@ function Dashboard() {
                     <td data-cell="URL" className="url-css">
                       {urldata.url}
                     </td>
-                    <td data-cell="Shortlink">
+                    <td data-cell="Shortlink" className="shortlink-th">
                       <button
                         className="short-link-btn"
                         onClick={() => {
