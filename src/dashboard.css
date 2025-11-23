@@ -23,7 +23,6 @@
   width: clamp(50px, 100px, 150px);
   padding: 10px;
   margin-top: 2rem;
-  cursor: pointer;
 }
 .stats-btn {
   color: #fff;
@@ -36,21 +35,8 @@
   letter-spacing: 1px;
   width: clamp(50px, 100px, 150px);
 }
-.short-link-btn {
-  color: #e100ff;
-  border: none;
-  background: none;
-  cursor: pointer;
-  text-decoration: underline;
-  font-size: 14px;
-  text-decoration: none;
-  text-align: left;
-}
-.url-css {
-  text-decoration: none;
-}
 .wrapper {
-  width: min(700px, 100%-3rem);
+  width: min(900px, 100%-3rem);
   margin-inline: auto;
   font-family: "Poppins", sans-serif;
 }
@@ -74,15 +60,7 @@ th {
 tr:nth-of-type(n) {
   border-bottom: 1px solid #e100ff;
 }
-@media (max-width: 990px) {
-  .short-link-btn {
-    display: none;
-  }
-}
-@media (max-width: 780px) {
-  .short-link-btn {
-    display: block;
-  }
+@media (max-width: 700px) {
   .url-input {
     width: 40%;
     text-align: center;
