@@ -55,11 +55,9 @@ td {
 }
 th {
   text-align: left;
-  /* background: hsl(0 0% 0% / 0.5); */
   border-bottom: 1px solid #e100ff;
 }
 tr:nth-of-type(n) {
-  /* background: hsl(0 0% 0% / 0.1); */
   border-bottom: 1px solid #e100ff;
 }
 @media (max-width: 700px) {

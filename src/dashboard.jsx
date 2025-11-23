@@ -5,33 +5,44 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 function Dashboard() {
   const [url, setUrl] = useState([]);
-  const [customCode, setCustomCode] = useState([]);
+  const [customCode, setCustomCode] = useState("");
   const [urldatas, setUrldatas] = useState([]);
+
   const handleAdd = () => {
     axios
       .post("http://localhost:3000/add", {
         url: url,
-        customCode: customCode,
+        customCode: customCode.trim() === "" ? null : customCode.trim(),
       })
       .then((result) => {
         console.log(result.data);
-        location.reload();
+        alert("Code Generated!!");
+        fetchUrls();
+        setUrl("");
+        setCustomCode("");
       })
       .catch((err) => console.log(err));
   };
-  useEffect(() => {
+
+  const fetchUrls = () => {
     axios
       .get("http://localhost:3000/get")
       .then((result) => {
         setUrldatas(result.data);
       })
       .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    fetchUrls();
   }, []);
+
   const handleDelete = (id) => {
     axios
       .delete("http://localhost:3000/delete/" + id)
       .then((result) => {
-        alert(result.data);
+        console.log(result.data);
+        alert("Deleted Successfully!!!");
         location.reload();
       })
       .then((err) => console.log(err));

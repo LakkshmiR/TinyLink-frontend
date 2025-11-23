@@ -1,25 +1,3 @@
-// import "./stats.css";
-// import { useParams } from "react-router-dom";
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-// function Stats() {
-//   const { code } = useParams();
-//   const [statsDatas, setStatsDatas] = useState(null);
-//   useEffect(() => {
-//     axios
-//       .get(`http://localhost:3000/get/${code}`)
-//       .then((result) => {
-//         setStatsDatas(result.data);
-//       })
-//       .catch((err) => console.log(err));
-//   }, [code]);
-//   return (
-//     <>
-//       <h1>{statsDatas.url}</h1>
-//     </>
-//   );
-// }
-// export default Stats;
 import "./stats.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
