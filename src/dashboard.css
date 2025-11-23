@@ -42,8 +42,11 @@
   background: none;
   cursor: pointer;
   text-decoration: underline;
-  padding: 0;
-  font: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  text-align: left;
 }
 .url-css {
   white-space: nowrap;
