@@ -38,11 +38,10 @@
 .short-link-btn {
   background: none;
   border: none;
-  outline: none;
   color: #e100ff;
+  padding: 0;
   cursor: pointer;
   text-decoration: none;
-  /* removed text align left */
 }
 .wrapper {
   width: min(900px, 100%-3rem);
@@ -85,7 +84,6 @@ td.shortlink-th {
 @media (max-width: 800px) {
   td.shortlink-th {
     display: block;
-    text-align: none;
   }
 
   table {
