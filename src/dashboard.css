@@ -36,30 +36,26 @@
   letter-spacing: 1px;
   width: clamp(50px, 100px, 150px);
 }
-.short-link-btn {
+/* .short-link-btn {
   color: #e100ff;
   border: none;
   background: none;
   cursor: pointer;
   text-decoration: underline;
-  /* overflow: hidden;
-  text-overflow: ellipsis; */
   font-size: 14px;
   text-decoration: none;
   text-align: left;
 }
 .url-css {
-  /* overflow: hidden;
-  text-overflow: ellipsis; */
   text-decoration: none;
-}
+} */
 .wrapper {
   width: min(900px, 100%-3rem);
   margin-inline: auto;
   font-family: "Poppins", sans-serif;
 }
 table {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   border-collapse: collapse;
   background: rgba(255, 255, 255, 0.05);
@@ -107,13 +103,5 @@ tr:nth-of-type(n) {
     font-weight: 700;
     text-transform: capitalize;
     text-align: left;
-  }
-  .short-link-btn {
-    overflow: none;
-    text-overflow: none;
-  }
-  .url-css {
-    overflow: none;
-    text-overflow: none;
   }
 }
