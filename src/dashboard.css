@@ -23,6 +23,7 @@
   width: clamp(50px, 100px, 150px);
   padding: 10px;
   margin-top: 2rem;
+  cursor: pointer;
 }
 .stats-btn {
   color: #fff;
@@ -34,6 +35,21 @@
   font-weight: 700;
   letter-spacing: 1px;
   width: clamp(50px, 100px, 150px);
+}
+.short-link-btn {
+  color: #e100ff;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font: inherit;
+}
+.url-css {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
 }
 .wrapper {
   width: min(900px, 100%-3rem);

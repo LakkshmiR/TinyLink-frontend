@@ -107,13 +107,27 @@ function Dashboard() {
                 return (
                   <tr key={urldata._id}>
                     <td data-cell="Code">{urldata.code}</td>
-                    <td data-cell="URL">{urldata.url}</td>
-                    <td data-cell="URL">
-                      <a
+                    <td data-cell="URL" className="url-css">
+                      {urldata.url}
+                    </td>
+                    <td data-cell="Shortlink">
+                      {/* <a
+                        className="shortlink-css"
                         href={`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                      >{`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}</a>
+                      >{`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}</a> */}
+                      <button
+                        className="short-link-btn"
+                        onClick={() => {
+                          window.open(
+                            `https://tinylink-backend-c7jd.onrender.com/${urldata.code}`,
+                            "_blank"
+                          );
+                        }}
+                      >
+                        {`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}
+                      </button>
                     </td>
 
                     <td data-cell="Clicks">{urldata.clicks}</td>
