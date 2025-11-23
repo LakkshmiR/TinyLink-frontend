@@ -85,4 +85,7 @@ tr:nth-of-type(n) {
     font-weight: 700;
     text-transform: capitalize;
   }
+  .url-input {
+    width: 40%;
+  }
 }
