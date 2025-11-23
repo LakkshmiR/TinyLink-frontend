@@ -65,6 +65,9 @@ tr:nth-of-type(n) {
   th.shortlink-th {
     display: none;
   }
+  .short-link-btn {
+    display: none;
+  }
 }
 @media (max-width: 700px) {
   table {
