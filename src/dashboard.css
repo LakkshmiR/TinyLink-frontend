@@ -42,6 +42,7 @@
   color: #e100ff;
   cursor: pointer;
   text-decoration: none;
+  /* removed text align left */
 }
 .wrapper {
   width: min(900px, 100%-3rem);
