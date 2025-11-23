@@ -85,7 +85,7 @@ function Dashboard() {
               <tr>
                 <th>Code</th>
                 <th>URL</th>
-                <th>Shortlink</th>
+                <th className="shortlink-th">Shortlink</th>
 
                 <th>Clicks</th>
                 <th>Last Clicked</th>
