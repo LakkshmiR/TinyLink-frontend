@@ -23,9 +23,9 @@ function Stats() {
 
   return (
     <>
-      <h1 className="heading-stats">TINYLINK STATS</h1>
-
       <div className="stats-container">
+        <h1 className="heading-stats">TINYLINK STATS</h1>
+
         <table>
           <thead>
             <tr>
