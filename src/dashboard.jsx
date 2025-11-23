@@ -109,7 +109,11 @@ function Dashboard() {
                     <td data-cell="Code">{urldata.code}</td>
                     <td data-cell="URL">{urldata.url}</td>
                     <td data-cell="URL">
-                      <a href="https://tinylink-backend-c7jd.onrender.com/${urldata.code}"></a>
+                      <a
+                        href={`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >{`https://tinylink-backend-c7jd.onrender.com/${urldata.code}`}</a>
                     </td>
 
                     <td data-cell="Clicks">{urldata.clicks}</td>
