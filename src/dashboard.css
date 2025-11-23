@@ -42,15 +42,15 @@
   background: none;
   cursor: pointer;
   text-decoration: underline;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
   font-size: 14px;
   text-decoration: none;
   text-align: left;
 }
 .url-css {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
   text-decoration: none;
 }
 .wrapper {
