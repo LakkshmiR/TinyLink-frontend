@@ -1,0 +1,14 @@
+.heading-stats {
+  color: white;
+  text-align: center;
+}
+.stats-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: 1rem;
+}
