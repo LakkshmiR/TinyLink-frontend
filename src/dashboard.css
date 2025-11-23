@@ -35,6 +35,14 @@
   letter-spacing: 1px;
   width: clamp(50px, 100px, 150px);
 }
+.short-link-btn {
+  background: none;
+  border: none;
+  outline: none;
+  color: #e100ff;
+  cursor: pointer;
+  text-decoration: none;
+}
 .wrapper {
   width: min(900px, 100%-3rem);
   margin-inline: auto;
