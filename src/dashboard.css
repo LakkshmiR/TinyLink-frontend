@@ -74,7 +74,15 @@ th {
 tr:nth-of-type(n) {
   border-bottom: 1px solid #e100ff;
 }
+@media (max-width: 990px) {
+  .short-link-btn {
+    display: none;
+  }
+}
 @media (max-width: 780px) {
+  .short-link-btn {
+    display: block;
+  }
   .url-input {
     width: 40%;
     text-align: center;
