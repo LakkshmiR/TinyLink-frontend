@@ -10,7 +10,7 @@ function Dashboard() {
 
   const handleAdd = () => {
     axios
-      .post("http://localhost:3000/add", {
+      .post("https://tinylink-backend-c7jd.onrender.com/add", {
         url: url,
         customCode: customCode.trim() === "" ? null : customCode.trim(),
       })
@@ -26,7 +26,7 @@ function Dashboard() {
 
   const fetchUrls = () => {
     axios
-      .get("http://localhost:3000/get")
+      .get("https://tinylink-backend-c7jd.onrender.com/get")
       .then((result) => {
         setUrldatas(result.data);
       })
@@ -39,7 +39,7 @@ function Dashboard() {
 
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:3000/delete/" + id)
+      .delete("https://tinylink-backend-c7jd.onrender.com/delete/" + id)
       .then((result) => {
         console.log(result.data);
         alert("Deleted Successfully!!!");
