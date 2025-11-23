@@ -94,9 +94,11 @@ function Dashboard() {
             <tbody>
               {urldatas.map((urldata) => {
                 const dateObj = urldata.lastClicked;
-                const indianDate = dateObj.toLocaleDateString("en-IN", {
-                  timeZone: "Asia/Kolkata",
-                });
+                const indianDate = dateObj
+                  ? new Date(dateObj).toLocaleDateString("en-IN", {
+                      timeZone: "Asia/Kolkata",
+                    })
+                  : "-";
                 const indianTime = dateObj.toLocaleTimeString("en-IN", {
                   timeZone: "Asia/Kolkata",
                 });
