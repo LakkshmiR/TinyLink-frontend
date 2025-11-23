@@ -109,12 +109,10 @@ tr:nth-of-type(n) {
     text-align: left;
   }
   .short-link-btn {
-    white-space: unset;
     overflow: none;
     text-overflow: none;
   }
   .url-css {
-    white-space: unset;
     overflow: none;
     text-overflow: none;
   }
