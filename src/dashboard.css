@@ -83,7 +83,10 @@ td.shortlink-th {
 }
 @media (max-width: 800px) {
   td.shortlink-th {
-    display: block;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 15ch auto;
+    padding: 0.5rem 1rem;
   }
 
   table {
