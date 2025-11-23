@@ -74,7 +74,7 @@ th {
 tr:nth-of-type(n) {
   border-bottom: 1px solid #e100ff;
 }
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .url-input {
     width: 40%;
     text-align: center;
