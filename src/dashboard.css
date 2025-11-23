@@ -41,7 +41,8 @@
   font-family: "Poppins", sans-serif;
 }
 table {
-  width: 70%;
+  /* width */
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
   background: rgba(255, 255, 255, 0.05);
